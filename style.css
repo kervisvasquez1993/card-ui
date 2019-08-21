@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #262626;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container-ui{
+    width: 1200px;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-ui{
+    position: relative;
+    width: calc(50% - 20px);
+    min-height: 300px;
+    background: #fff;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.card-ui .imgBx-ui{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+
+}
+
+.card-ui .imgBx-ui img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-ui .details-ui{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-ui .details-ui .content-iu{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-ui .details-ui .content-ui h5{
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 0.85em;
+    font-weight: 600;
+
+
+}
+.card-ui .details-ui .content-ui h5 span{
+    font-size: 14px;
+    color: #777;
+
+}
+.card-ui .details-ui .content-ui ul {
+    margin: 0 ;
+    padding: 0;
+    display: flex;
+
+}
+
+.card-ui .details-ui .content-ui ul li{
+    margin-left: 4px;
+}
+.card-ui .details-ui .content-ui ul li a{
+    color:#fff;
+    border: none;
+}
+.card-ui .details-ui .content-ui ul li:nth-child(1) a{
+    background: #3b5995;
+}
+.card-ui .details-ui .content-ui ul li:nth-child(2) a{
+    background: #55acee;
+}
+.card-ui .details-ui .content-ui ul li:nth-child(3) a{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.card-ui .details-ui .content-ui a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 2px solid #262626;
+    font-weight: 500;
+}
+.card-ui .details-ui .content-ui a:hover{
+    background: #262626;
+}
+
+@media (max-width: 1200px) {
+    .container-ui{
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .card-ui{
+        width: calc(70% - 20px);
+        margin: 10px auto;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .card-ui{
+        width: calc(70% - 20px);
+        margin: 10px auto;
+
+    }
+    .card-ui .imgBx-ui{
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+    }
+
+    .card-ui .details-ui{
+        position: relative;
+        width: 100%;
+        height: 200px;
+
+    }
+
+}
+
